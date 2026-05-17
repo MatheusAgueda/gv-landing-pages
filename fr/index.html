@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobil-homes & Maisons Modulaires | Green Village Mobile Homes</title>
+<meta name="description" content="Mobil-homes à partir de 10 000 €. Livraison en France, Belgique, Suisse. Devis gratuit en 24h. Transport inclus.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Consent Mode v2 — Cookiebot CMP BEFORE GTM -->
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js"
+  data-cbid="[ACTION-REQUIRED-COOKIEBOT-ID]"
+  data-blockingmode="auto" type="text/javascript"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied',
+    'wait_for_update': 2000,
+    'region': ['PT','ES','FR','DE','NL','GB','IE','AT','CH','BE']
+  });
+</script>
+
+<!-- Google Tag Manager — after consent default -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PSD3BVTB');</script>
+
+<style>
+:root {
+  --green: #2d7a4f;
+  --green-dark: #1f5c39;
+  --green-light: #e8f5ee;
+  --gold: #f5a623;
+  --text: #1a1a1a;
+  --muted: #666;
+  --border: #e0e0e0;
+  --radius: 12px;
+  --shadow: 0 4px 20px rgba(0,0,0,0.10);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; color: var(--text); background: #fff; line-height: 1.6; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+/* HEADER */
+.site-header {
+  position: sticky; top: 0; z-index: 100;
+  background: #fff; border-bottom: 1px solid var(--border);
+  padding: 0 24px; height: 64px;
+  display: flex; align-items: center; justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.1rem; color: var(--green); }
+.logo img { width: 40px; height: 40px; border-radius: 8px; }
+.header-cta {
+  background: var(--green); color: #fff;
+  padding: 10px 20px; border-radius: 8px;
+  font-weight: 600; font-size: 0.9rem;
+  transition: background 0.2s;
+}
+.header-cta:hover { background: var(--green-dark); }
+
+/* HERO */
+.hero {
+  position: relative; overflow: hidden;
+  min-height: 520px; display: flex; align-items: center;
+  background: linear-gradient(135deg, #1a3c28 0%, #2d7a4f 100%);
+}
+.hero-img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; opacity: 0.35;
+}
+.hero-content {
+  position: relative; z-index: 2;
+  max-width: 680px; margin: 0 auto; padding: 80px 24px 100px;
+  text-align: center; color: #fff;
+}
+.hero-badge {
+  display: inline-block; background: var(--gold);
+  color: #1a1a1a; font-weight: 700; font-size: 0.8rem;
+  padding: 5px 14px; border-radius: 20px; margin-bottom: 18px;
+  letter-spacing: 0.5px; text-transform: uppercase;
+}
+.hero-title {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800; line-height: 1.15; margin-bottom: 18px;
+}
+.hero-title span { color: var(--gold); }
+.hero-sub { font-size: 1.15rem; opacity: 0.9; margin-bottom: 32px; max-width: 520px; margin-left: auto; margin-right: auto; }
+.hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--gold); color: #1a1a1a;
+  padding: 15px 32px; border-radius: 8px;
+  font-weight: 700; font-size: 1rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+  box-shadow: 0 4px 14px rgba(245,166,35,0.4);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(245,166,35,0.5); }
+.btn-wa {
+  background: #25d366; color: #fff;
+  padding: 15px 28px; border-radius: 8px;
+  font-weight: 600; font-size: 1rem;
+  display: flex; align-items: center; gap: 8px;
+  transition: background 0.2s;
+}
+.btn-wa:hover { background: #1fb859; }
+.hero-trust {
+  margin-top: 36px; display: flex; gap: 28px; justify-content: center;
+  flex-wrap: wrap; font-size: 0.88rem; opacity: 0.88;
+}
+.hero-trust span { display: flex; align-items: center; gap: 6px; }
+
+/* REVIEWS BAR */
+.reviews-bar {
+  background: var(--green); color: #fff;
+  padding: 16px 24px; text-align: center;
+  display: flex; align-items: center; justify-content: center; gap: 20px;
+  flex-wrap: wrap; font-size: 0.95rem;
+}
+.reviews-stars { color: var(--gold); font-size: 1.2rem; letter-spacing: 2px; }
+.reviews-bar strong { font-size: 1.05rem; }
+
+/* SECTIONS */
+.section { padding: 72px 24px; max-width: 1100px; margin: 0 auto; }
+.section-alt { background: #f7faf8; }
+.section-alt .section { background: transparent; }
+.section-title {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 800; margin-bottom: 12px; color: var(--text);
+}
+.section-sub { color: var(--muted); font-size: 1rem; margin-bottom: 40px; max-width: 560px; }
+
+/* USP STRIP */
+.usp-strip {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px; margin-top: 8px;
+}
+.usp-card {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 28px 22px;
+  text-align: center; box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+.usp-card:hover { transform: translateY(-3px); }
+.usp-icon { font-size: 2.2rem; margin-bottom: 12px; }
+.usp-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+.usp-card p { font-size: 0.88rem; color: var(--muted); }
+
+/* PRODUCTS GRID */
+.products-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+}
+.product-card {
+  border: 1px solid var(--border); border-radius: var(--radius);
+  overflow: hidden; box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex; flex-direction: column;
+}
+.product-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.13); }
+.product-img {
+  width: 100%; height: 200px; object-fit: cover;
+  background: linear-gradient(135deg, #c8e6d4 0%, #a8d5b9 100%);
+}
+.product-body { padding: 22px; flex: 1; display: flex; flex-direction: column; }
+.product-tag {
+  display: inline-block; background: var(--green-light); color: var(--green);
+  font-size: 0.75rem; font-weight: 700; padding: 3px 10px; border-radius: 20px;
+  margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px;
+}
+.product-name { font-size: 1.15rem; font-weight: 700; margin-bottom: 6px; }
+.product-desc { font-size: 0.88rem; color: var(--muted); margin-bottom: 14px; flex: 1; }
+.product-price { font-size: 1.5rem; font-weight: 800; color: var(--green); margin-bottom: 4px; }
+.product-price-note { font-size: 0.78rem; color: var(--muted); margin-bottom: 16px; }
+.product-features { list-style: none; margin-bottom: 18px; }
+.product-features li {
+  font-size: 0.85rem; padding: 4px 0; border-bottom: 1px solid #f0f0f0;
+  display: flex; align-items: center; gap: 8px;
+}
+.product-features li:last-child { border-bottom: none; }
+.btn-product-wa {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  background: #25d366; color: #fff; padding: 12px;
+  border-radius: 8px; font-weight: 600; font-size: 0.92rem;
+  transition: background 0.2s; margin-top: auto;
+}
+.btn-product-wa:hover { background: #1fb859; }
+
+/* FORM */
+.form-section { background: var(--green-light); }
+.form-wrap {
+  background: #fff; border-radius: 16px; padding: 44px 40px;
+  box-shadow: var(--shadow); max-width: 640px; margin: 0 auto;
+}
+.form-title { font-size: 1.6rem; font-weight: 800; margin-bottom: 6px; }
+.form-sub { color: var(--muted); margin-bottom: 28px; font-size: 0.95rem; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group.full { grid-column: 1 / -1; }
+.form-group label { font-size: 0.85rem; font-weight: 600; color: var(--text); }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 11px 14px; border: 1.5px solid var(--border);
+  border-radius: 8px; font-family: inherit; font-size: 0.95rem;
+  color: var(--text); background: #fff;
+  transition: border-color 0.2s;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none; border-color: var(--green);
+}
+.form-group textarea { resize: vertical; min-height: 90px; }
+.btn-submit {
+  width: 100%; background: var(--green); color: #fff;
+  padding: 16px; border: none; border-radius: 8px;
+  font-family: inherit; font-size: 1.05rem; font-weight: 700;
+  cursor: pointer; margin-top: 8px;
+  transition: background 0.2s, transform 0.15s;
+}
+.btn-submit:hover { background: var(--green-dark); transform: translateY(-1px); }
+.form-disclaimer { font-size: 0.78rem; color: var(--muted); margin-top: 10px; text-align: center; }
+.form-success {
+  display: none; text-align: center; padding: 40px 20px;
+}
+.form-success h3 { font-size: 1.4rem; font-weight: 700; color: var(--green); margin-bottom: 10px; }
+.form-success p { color: var(--muted); margin-bottom: 24px; }
+
+/* TESTIMONIALS */
+.testimonials-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.testimonial-card {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 26px;
+  box-shadow: var(--shadow);
+}
+.testi-stars { color: var(--gold); font-size: 1.05rem; margin-bottom: 10px; }
+.testi-text { font-size: 0.92rem; color: var(--text); margin-bottom: 14px; line-height: 1.65; font-style: italic; }
+.testi-author { display: flex; align-items: center; gap: 10px; }
+.testi-avatar {
+  width: 42px; height: 42px; border-radius: 50%;
+  background: var(--green-light); display: flex; align-items: center;
+  justify-content: center; font-weight: 700; color: var(--green);
+  font-size: 1rem; flex-shrink: 0;
+}
+.testi-name { font-weight: 700; font-size: 0.9rem; }
+.testi-location { font-size: 0.78rem; color: var(--muted); }
+
+/* FAQ */
+.faq-list { max-width: 760px; }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-question {
+  width: 100%; background: none; border: none;
+  padding: 20px 0; font-family: inherit;
+  font-size: 1rem; font-weight: 600; color: var(--text);
+  text-align: left; cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+}
+.faq-question:hover { color: var(--green); }
+.faq-icon { color: var(--green); font-size: 1.3rem; flex-shrink: 0; transition: transform 0.25s; }
+.faq-answer {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.25s;
+}
+.faq-answer p { padding-bottom: 18px; font-size: 0.95rem; color: var(--muted); line-height: 1.7; }
+.faq-item.open .faq-icon { transform: rotate(45deg); }
+.faq-item.open .faq-answer { max-height: 300px; }
+
+/* STICKY WA BUTTON */
+.wa-float {
+  position: fixed; bottom: 90px; right: 22px; z-index: 200;
+  width: 58px; height: 58px; border-radius: 50%;
+  background: #25d366; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.55rem; box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+  animation: waPulse 2.5s infinite;
+  transition: transform 0.2s;
+}
+.wa-float:hover { transform: scale(1.08); }
+@keyframes waPulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.5); }
+  50% { box-shadow: 0 4px 36px rgba(37,211,102,0.75); }
+}
+
+/* STICKY MOBILE CTA BAR */
+.mobile-cta-bar {
+  display: none;
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 199;
+  background: #fff; border-top: 1px solid var(--border);
+  padding: 10px 16px; gap: 10px;
+  box-shadow: 0 -4px 16px rgba(0,0,0,0.10);
+}
+.mobile-cta-bar a {
+  flex: 1; text-align: center; padding: 12px 8px;
+  border-radius: 8px; font-weight: 700; font-size: 0.92rem;
+}
+.mobile-cta-bar .mcta-wa { background: #25d366; color: #fff; }
+.mobile-cta-bar .mcta-devis { background: var(--green); color: #fff; }
+
+/* FOOTER */
+.site-footer {
+  background: #1a1a1a; color: #ccc;
+  padding: 36px 24px; text-align: center;
+  font-size: 0.85rem;
+}
+.site-footer a { color: #aaa; border-bottom: 1px solid #333; }
+.site-footer p + p { margin-top: 8px; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .form-wrap { padding: 32px 24px; }
+  .form-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .hero-btns { flex-direction: column; align-items: center; }
+  .btn-primary, .btn-wa { width: 100%; max-width: 320px; justify-content: center; }
+  .mobile-cta-bar { display: flex; }
+  body { padding-bottom: 68px; }
+  .wa-float { bottom: 80px; }
+  .header-cta { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- GTM noscript -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSD3BVTB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="logo">
+    <img src="https://static.wixstatic.com/media/logo.png"
+         onerror="this.src='https://via.placeholder.com/40x40/2d7a4f/ffffff?text=GV'"
+         alt="Green Village Logo">
+    Green Village
+  </div>
+  <a href="#devis" class="header-cta">Devis gratuit</a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <!-- [ACTION REQUIRED] Replace src with actual hero image from Wix CDN or Google Drive -->
+  <img class="hero-img"
+       src="https://static.wixstatic.com/media/hero-mobile-home.jpg"
+       onerror="this.style.display='none'"
+       alt="Mobil-home Green Village">
+  <div class="hero-content">
+    <span class="hero-badge">Livraison en Europe &bull; Transport inclus</span>
+    <h1 class="hero-title">Votre <span>mobil-home</span><br>à partir de <span>10 000 €</span></h1>
+    <p class="hero-sub">Fabrication européenne, personnalisation complète, livraison en France, Belgique, Suisse et dans toute l'Europe. Devis en 24h.</p>
+    <div class="hero-btns">
+      <a href="#devis" class="btn-primary">Demander un devis gratuit</a>
+      <a href="https://wa.me/351937369173?text=Bonjour%20%21%20J%27ai%20vu%20votre%20annonce%20et%20j%27aimerais%20plus%20d%27informations%20sur%20les%20mobil-homes."
+         class="btn-wa" target="_blank" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+    <div class="hero-trust">
+      <span>&#10003; Transport inclus</span>
+      <span>&#10003; Garantie 2 ans</span>
+      <span>&#10003; 500+ clients livrés</span>
+      <span>&#10003; Réponse en 24h</span>
+    </div>
+  </div>
+</section>
+
+<!-- GOOGLE REVIEWS BAR -->
+<div class="reviews-bar">
+  <span class="reviews-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+  <strong>4,7 / 5</strong>
+  <span>338 avis Google</span>
+  <span>&bull;</span>
+  <span>&#34;Excellente expérience de A à Z&#34;</span>
+</div>
+
+<!-- USP STRIP -->
+<div class="section-alt">
+  <div class="section">
+    <h2 class="section-title">Pourquoi choisir Green Village ?</h2>
+    <p class="section-sub">Plus de 500 mobil-homes livrés en Europe. Qualité, transparence, prix direct fabricant.</p>
+    <div class="usp-strip">
+      <div class="usp-card">
+        <div class="usp-icon">&#128666;</div>
+        <h3>Livraison incluse</h3>
+        <p>Transport et installation en France, Belgique, Suisse et Portugal.</p>
+      </div>
+      <div class="usp-card">
+        <div class="usp-icon">&#128176;</div>
+        <h3>Prix direct usine</h3>
+        <p>Pas d'intermédiaires. De 10 000 € à 50 000 €.</p>
+      </div>
+      <div class="usp-card">
+        <div class="usp-icon">&#127981;</div>
+        <h3>Personnalisation</h3>
+        <p>Couleurs, finitions, équipements — tout selon vos goûts.</p>
+      </div>
+      <div class="usp-card">
+        <div class="usp-icon">&#9989;</div>
+        <h3>Garantie 2 ans</h3>
+        <p>Structure et équipements couverts pendant 2 ans.</p>
+      </div>
+      <div class="usp-card">
+        <div class="usp-icon">&#128222;</div>
+        <h3>Devis en 24h</h3>
+        <p>Réponse rapide par WhatsApp ou email.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCTS CATALOGUE -->
+<div id="catalogue">
+  <div class="section">
+    <h2 class="section-title">Notre catalogue</h2>
+    <p class="section-sub">6 modèles disponibles, de l'entrée de gamme au luxe. Chaque modèle est personnalisable.</p>
+    <div class="products-grid">
+
+      <!-- T1 Economique -->
+      <div class="product-card">
+        <img class="product-img"
+             src="https://static.wixstatic.com/media/t1-economique.jpg"
+             onerror="this.style.background='linear-gradient(135deg,#c8e6d4,#a8d5b9)';this.style.height='200px'"
+             alt="T1 Économique">
+        <div class="product-body">
+          <span class="product-tag">Entrée de gamme</span>
+          <div class="product-name">T1 Économique</div>
+          <p class="product-desc">Idéal pour les petits espaces, locations ou premier investissement. Compact et fonctionnel.</p>
+          <div class="product-price">À partir de 10 000 €</div>
+          <div class="product-price-note">Transport inclus &bull; Garantie 2 ans</div>
+          <ul class="product-features">
+            <li>&#10003; Studio / T1</li>
+            <li>&#10003; Cuisine équipée</li>
+            <li>&#10003; Salle de bain</li>
+            <li>&#10003; Livraison Europe</li>
+          </ul>
+          <a href="https://wa.me/351937369173?text=Bonjour%20%21%20J%27ai%20vu%20votre%20annonce%20et%20j%27aimerais%20plus%20d%27informations%20sur%20les%20mobil-homes.%20Mod%C3%A8le%20%3A%20T1%20%C3%89conomique."
+             class="btn-product-wa" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Infos T1 via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- T2 Standard -->
+      <div class="product-card">
+        <img class="product-img"
+             src="https://static.wixstatic.com/media/t2-standard.jpg"
+             onerror="this.style.background='linear-gradient(135deg,#c8e6d4,#a8d5b9)';this.style.height='200px'"
+             alt="T2 Standard">
+        <div class="product-body">
+          <span class="product-tag">Le plus populaire</span>
+          <div class="product-name">T2 Standard</div>
+          <p class="product-desc">Notre best-seller. Parfait pour les couples ou la location saisonnière. Rapport qualité/prix imbattable.</p>
+          <div class="product-price">À partir de 24 500 €</div>
+          <div class="product-price-note">Transport inclus &bull; Garantie 2 ans</div>
+          <ul class="product-features">
+            <li>&#10003; 2 pièces / T2</li>
+            <li>&#10003; Cuisine américaine</li>
+            <li>&#10003; Terrasse en option</li>
+            <li>&#10003; Finitions premium</li>
+          </ul>
+          <a href="https://wa.me/351937369173?text=Bonjour%20%21%20J%27ai%20vu%20votre%20annonce%20et%20j%27aimerais%20plus%20d%27informations%20sur%20les%20mobil-homes.%20Mod%C3%A8le%20%3A%20T2%20Standard."
+             class="btn-product-wa" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Infos T2 via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- T3 Premium -->
+      <div class="product-card">
+        <img class="product-img"
+             src="https://static.wixstatic.com/media/t3-premium.jpg"
+             onerror="this.style.background='linear-gradient(135deg,#c8e6d4,#a8d5b9)';this.style.height='200px'"
+             alt="T3 Premium">
+        <div class="product-body">
+          <span class="product-tag">Famille</span>
+          <div class="product-name">T3 Premium</div>
+          <p class="product-desc">Idéal pour les familles ou la résidence principale. Grand espace de vie, finitions haut de gamme.</p>
+          <div class="product-price">À partir de 35 000 €</div>
+          <div class="product-price-note">Transport inclus &bull; Garantie 2 ans</div>
+          <ul class="product-features">
+            <li>&#10003; 3 pièces / T3</li>
+            <li>&#10003; 2 chambres</li>
+            <li>&#10003; Salon spacieux</li>
+            <li>&#10003; Isolation renforcée</li>
+          </ul>
+          <a href="https://wa.me/351937369173?text=Bonjour%20%21%20J%27ai%20vu%20votre%20annonce%20et%20j%27aimerais%20plus%20d%27informations%20sur%20les%20mobil-homes.%20Mod%C3%A8le%20%3A%20T3%20Premium."
+             class="btn-product-wa" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Infos T3 via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Lodge Luxe -->
+      <div class="product-card">
+        <img class="product-img"
+             src="https://static.wixstatic.com/media/lodge-luxe.jpg"
+             onerror="this.style.background='linear-gradient(135deg,#c8e6d4,#a8d5b9)';this.style.height='200px'"
+             alt="Lodge Luxe">
+        <div class="product-body">
+          <span class="product-tag">Haut de gamme</span>
+          <div class="product-name">Lodge Luxe</div>
+          <p class="product-desc">Le summum du mobil-home. Architecture moderne, matériaux premium, equipements domotiques.</p>
+          <div class="product-price">À partir de 50 000 €</div>
+          <div class="product-price-note">Transport inclus &bull; Garantie 2 ans</div>
+          <ul class="product-features">
+            <li>&#10003; Grande surface</li>
+            <li>&#10003; Design architectural</li>
+            <li>&#10003; Domotique intégrée</li>
+            <li>&#10003; Sur mesure</li>
+          </ul>
+          <a href="https://wa.me/351937369173?text=Bonjour%20%21%20J%27ai%20vu%20votre%20annonce%20et%20j%27aimerais%20plus%20d%27informations%20sur%20les%20mobil-homes.%20Mod%C3%A8le%20%3A%20Lodge%20Luxe."
+             class="btn-product-wa" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Infos Lodge via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Container -->
+      <div class="product-card">
+        <img class="product-img"
+             src="https://static.wixstatic.com/media/container.jpg"
+             onerror="this.style.background='linear-gradient(135deg,#c8e6d4,#a8d5b9)';this.style.height='200px'"
+             alt="Maison Container">
+        <div class="product-body">
+          <span class="product-tag">Industriel / Moderne</span>
+          <div class="product-name">Maison Container</div>
+          <p class="product-desc">Esthétique industrielle moderne. Robuste, empilable, idéale pour terrains atypiques.</p>
+          <div class="product-price">À partir de 15 000 €</div>
+          <div class="product-price-note">Transport inclus &bull; Garantie 2 ans</div>
+          <ul class="product-features">
+            <li>&#10003; Structure acier</li>
+            <li>&#10003; Modulaire</li>
+            <li>&#10003; Design unique</li>
+            <li>&#10003; Très robuste</li>
+          </ul>
+          <a href="https://wa.me/351937369173?text=Bonjour%20%21%20J%27ai%20vu%20votre%20annonce%20et%20j%27aimerais%20plus%20d%27informations%20sur%20les%20mobil-homes.%20Mod%C3%A8le%20%3A%20Container."
+             class="btn-product-wa" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Infos Container via WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Tiny House -->
+      <div class="product-card">
+        <img class="product-img"
+             src="https://static.wixstatic.com/media/tiny-house.jpg"
+             onerror="this.style.background='linear-gradient(135deg,#c8e6d4,#a8d5b9)';this.style.height='200px'"
+             alt="Tiny House">
+        <div class="product-body">
+          <span class="product-tag">Eco / Nomade</span>
+          <div class="product-name">Tiny House</div>
+          <p class="product-desc">Petite surface, grand confort. Idéale pour vivre en autonomie ou en complément de résidence principale.</p>
+          <div class="product-price">À partir de 18 000 €</div>
+          <div class="product-price-note">Transport inclus &bull; Garantie 2 ans</div>
+          <ul class="product-features">
+            <li>&#10003; Compact &amp; écologique</li>
+            <li>&#10003; Sur roues possible</li>
+            <li>&#10003; Autonomie énergie</li>
+            <li>&#10003; Zoning facile</li>
+          </ul>
+          <a href="https://wa.me/351937369173?text=Bonjour%20%21%20J%27ai%20vu%20votre%20annonce%20et%20j%27aimerais%20plus%20d%27informations%20sur%20les%20mobil-homes.%20Mod%C3%A8le%20%3A%20Tiny%20House."
+             class="btn-product-wa" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Infos Tiny House via WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- QUOTE FORM -->
+<div id="devis" class="section-alt form-section">
+  <div class="section">
+    <div class="form-wrap">
+      <h2 class="form-title">Devis gratuit en 24h</h2>
+      <p class="form-sub">Remplissez le formulaire — notre équipe vous répond dans les 24 heures.</p>
+      <form id="quote-form" autocomplete="on" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="fname">Prénom *</label>
+            <input type="text" id="fname" name="fname" placeholder="Jean" required autocomplete="given-name">
+          </div>
+          <div class="form-group">
+            <label for="fphone">Téléphone *</label>
+            <input type="tel" id="fphone" name="fphone" placeholder="+33 6 00 00 00 00" required autocomplete="tel">
+          </div>
+          <div class="form-group full">
+            <label for="femail">E-mail</label>
+            <input type="email" id="femail" name="femail" placeholder="jean@exemple.fr" autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="fcountry">Pays de livraison</label>
+            <select id="fcountry" name="fcountry">
+              <option value="FR" selected>France</option>
+              <option value="BE">Belgique</option>
+              <option value="CH">Suisse</option>
+              <option value="PT">Portugal</option>
+              <option value="ES">Espagne</option>
+              <option value="DE">Allemagne</option>
+              <option value="NL">Pays-Bas</option>
+              <option value="OTHER">Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fbedrooms">Modèle souhaité</label>
+            <select id="fbedrooms" name="fbedrooms">
+              <option value="">-- Choisir --</option>
+              <option value="T1">T1 Économique</option>
+              <option value="T2">T2 Standard</option>
+              <option value="T3">T3 Premium</option>
+              <option value="Lodge">Lodge Luxe</option>
+              <option value="Container">Container</option>
+              <option value="TinyHouse">Tiny House</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label for="fbudget">Budget approximatif</label>
+            <select id="fbudget" name="fbudget">
+              <option value="">-- Sélectionner --</option>
+              <option value="<15k">Moins de 15 000 €</option>
+              <option value="15-30k">15 000 € – 30 000 €</option>
+              <option value="30-50k">30 000 € – 50 000 €</option>
+              <option value=">50k">Plus de 50 000 €</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label for="fmessage">Message (optionnel)</label>
+            <textarea id="fmessage" name="fmessage" placeholder="Parlez-nous de votre projet, terrain, délais..."></textarea>
+          </div>
+        </div>
+        <!-- Hidden tracking fields -->
+        <input type="hidden" id="gclid-field" name="gclid" value="">
+        <input type="hidden" name="market" value="FR">
+        <input type="hidden" name="lang" value="fr">
+        <button type="submit" class="btn-submit">Envoyer ma demande de devis &rarr;</button>
+        <p class="form-disclaimer">Vos données sont protégées conformément au RGPD. Aucun spam, jamais.</p>
+      </form>
+      <div id="form-success" class="form-success">
+        <h3>Demande envoyée !</h3>
+        <p>Merci ! Notre équipe vous contacte sous 24h.<br>Pour une réponse immédiate, écrivez-nous sur WhatsApp.</p>
+        <a href="https://wa.me/351937369173?text=Bonjour%20%21%20J%27ai%20vu%20votre%20annonce%20et%20j%27aimerais%20plus%20d%27informations%20sur%20les%20mobil-homes."
+           class="btn-wa" target="_blank" rel="noopener" style="display:inline-flex;margin:0 auto;max-width:280px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Contacter sur WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<div class="section">
+  <h2 class="section-title">Ce que disent nos clients</h2>
+  <p class="section-sub">Plus de 500 familles en Europe font confiance à Green Village Mobile Homes.</p>
+  <div class="testimonials-grid">
+
+    <div class="testimonial-card">
+      <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="testi-text">"Nous avons commandé un T2 Standard pour notre terrain en Bretagne. Livraison rapide, communication impeccable et qualité bien au-dessus du prix. On recommande vivement !"</p>
+      <div class="testi-author">
+        <div class="testi-avatar">SL</div>
+        <div>
+          <div class="testi-name">Sophie &amp; Laurent</div>
+          <div class="testi-location">Bretagne, France &bull; T2 Standard</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="testi-text">"J'avais des doutes sur la livraison depuis le Portugal. Tout s'est parfaitement passé — le chauffeur était professionnel et le mobil-home était exactement comme sur les photos."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">PM</div>
+        <div>
+          <div class="testi-name">Pierre M.</div>
+          <div class="testi-location">Lyon, France &bull; T3 Premium</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="testi-text">"Le Lodge Luxe dépasse toutes mes attentes. Construction solide, matériaux de qualité et suivi commercial excellent. Merci à toute l'équipe de Green Village !"</p>
+      <div class="testi-author">
+        <div class="testi-avatar">AD</div>
+        <div>
+          <div class="testi-name">Alexandre D.</div>
+          <div class="testi-location">Bordeaux, France &bull; Lodge Luxe</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="testi-text">"Cinq étoiles sans hésitation. Notre Tiny House est parfaite pour le glamping qu'on développe. Prix compétitif, livraison dans les délais et service après-vente réactif."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">NC</div>
+        <div>
+          <div class="testi-name">Nathalie C.</div>
+          <div class="testi-location">Dordogne, France &bull; Tiny House</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="testi-text">"Très satisfait du Container Home. L'équipe a été à l'écoute de mes besoins spécifiques et a livré exactement ce que j'avais demandé. Je recommande à 100%."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">TH</div>
+        <div>
+          <div class="testi-name">Thomas H.</div>
+          <div class="testi-location">Toulouse, France &bull; Container Home</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="testi-text">"Communication facile en français, devis détaillé, livraison ponctuelle. Le T1 Économique est parfait comme studio de jardin. Excellent rapport qualité-prix !"</p>
+      <div class="testi-author">
+        <div class="testi-avatar">MR</div>
+        <div>
+          <div class="testi-name">Marie-France R.</div>
+          <div class="testi-location">Normandie, France &bull; T1 Économique</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="section-alt">
+  <div class="section">
+    <h2 class="section-title">Questions fréquentes</h2>
+    <p class="section-sub">Tout ce que vous devez savoir avant de commander votre mobil-home.</p>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Quel est le délai de livraison ?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Le délai standard est de 4 à 8 semaines à partir de la confirmation de commande et du versement de l'acompte. Ce délai peut varier selon le modèle, le niveau de personnalisation et les conditions de transport vers votre pays.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Le transport est-il inclus dans le prix ?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Oui, le transport est inclus dans tous nos prix pour la France, la Belgique, la Suisse, le Portugal et l'Espagne. Pour d'autres destinations européennes, nous vous fournirons un devis transport détaillé et compétitif.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Proposez-vous un financement ?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Nous travaillons avec plusieurs partenaires bancaires qui proposent des financements adaptés. Mentionnez votre intérêt pour le financement dans votre demande de devis et notre équipe vous enverra les options disponibles dans votre pays.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Puis-je visiter un showroom ?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Oui ! Nous avons un showroom au Portugal où vous pouvez voir nos modèles en vrai. Nous organisons également des visites virtuelles en vidéo-conférence si vous êtes en France ou en Belgique. Contactez-nous pour prendre rendez-vous.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Quelle garantie est offerte ?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Tous nos mobil-homes sont couverts par une garantie de 2 ans sur la structure et les équipements principaux. Un support technique est disponible après la garantie. Nos mobil-homes sont construits pour durer 20 à 30 ans avec un entretien minimal.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Faut-il un permis de construire ?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Cela dépend de votre commune et de l'usage prévu. En France, les mobil-homes sur terrain privé sont souvent soumis à déclaration préalable plutôt qu'à permis de construire. Nous vous aidons à comprendre les démarches selon votre situation et fournissons tous les documents techniques nécessaires.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Puis-je personnaliser mon mobil-home ?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolument ! Couleurs extérieures, revêtements intérieurs, agencement, équipements, terrasse... Presque tout est personnalisable. Envoyez-nous vos idées et nous créerons un devis sur mesure adapté à vos souhaits et à votre budget.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- WA CTA SECTION -->
+<div style="background:var(--green);padding:60px 24px;text-align:center;color:#fff;">
+  <h2 style="font-size:clamp(1.5rem,3vw,2.2rem);font-weight:800;margin-bottom:14px;">Une question ? On répond en direct sur WhatsApp</h2>
+  <p style="font-size:1.05rem;opacity:0.9;margin-bottom:30px;max-width:500px;margin-left:auto;margin-right:auto;">Notre équipe est disponible du lundi au samedi, 9h–19h. Réponse garantie sous 1h en heures ouvrables.</p>
+  <a href="https://wa.me/351937369173?text=Bonjour%20%21%20J%27ai%20vu%20votre%20annonce%20et%20j%27aimerais%20plus%20d%27informations%20sur%20les%20mobil-homes."
+     target="_blank" rel="noopener"
+     style="display:inline-flex;align-items:center;gap:10px;background:#25d366;color:#fff;padding:16px 36px;border-radius:8px;font-weight:700;font-size:1.05rem;">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Chatter sur WhatsApp
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p><strong>Green Village Mobile Homes</strong> &mdash; Portugal &bull; NIF actif</p>
+  <p>
+    <a href="https://www.greenvillagemobilehomes.com/politique-de-confidentialite" target="_blank">Politique de confidentialité</a>
+    &nbsp;&bull;&nbsp;
+    <a href="https://www.greenvillagemobilehomes.com/mentions-legales" target="_blank">Mentions légales</a>
+    &nbsp;&bull;&nbsp;
+    <a href="https://www.greenvillagemobilehomes.com" target="_blank">Site officiel</a>
+  </p>
+  <p style="margin-top:14px;font-size:0.78rem;color:#777;">
+    &copy; 2026 Green Village Mobile Homes. Tous droits réservés.<br>
+    Prix indicatifs hors personnalisation. Transport inclus en Europe occidentale.
+  </p>
+</footer>
+
+<!-- STICKY WA FLOAT BUTTON -->
+<a href="https://wa.me/351937369173?text=Bonjour%20%21%20J%27ai%20vu%20votre%20annonce%20et%20j%27aimerais%20plus%20d%27informations%20sur%20les%20mobil-homes."
+   class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- STICKY MOBILE CTA BAR -->
+<div class="mobile-cta-bar">
+  <a href="https://wa.me/351937369173?text=Bonjour%20%21%20J%27ai%20vu%20votre%20annonce%20et%20j%27aimerais%20plus%20d%27informations%20sur%20les%20mobil-homes."
+     class="mcta-wa" target="_blank" rel="noopener">WhatsApp</a>
+  <a href="#devis" class="mcta-devis">Devis gratuit</a>
+</div>
+
+<script>
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var item = this.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(function(el){ el.classList.remove('open'); el.querySelector('.faq-question').setAttribute('aria-expanded','false'); });
+    if(!isOpen){ item.classList.add('open'); this.setAttribute('aria-expanded','true'); }
+  });
+});
+
+// Form submit tracking
+document.getElementById('quote-form').addEventListener('submit', function(e){
+  e.preventDefault();
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    'event': 'lead_form_submit',
+    'conversion_label': 'FORM_SUBMIT',
+    'market': document.documentElement.lang || 'fr',
+    'form_name': 'landing_page_quote',
+    'budget': document.getElementById('fbudget').value,
+    'bedrooms': document.getElementById('fbedrooms').value,
+    'country': document.getElementById('fcountry').value
+  });
+  if(typeof gtag !== 'undefined'){
+    gtag('event', 'conversion', {'send_to': 'AW-11495617117'});
+  }
+  document.getElementById('quote-form').style.display = 'none';
+  document.getElementById('form-success').style.display = 'block';
+});
+
+// GCLID capture
+(function(){
+  var gclid = new URLSearchParams(window.location.search).get('gclid');
+  if(gclid){
+    document.cookie = '_gclid=' + encodeURIComponent(gclid) + ';max-age=7776000;path=/;SameSite=Lax';
+    var h = document.getElementById('gclid-field');
+    if(h) h.value = gclid;
+  }
+})();
+</script>
+
+</body>
+</html>

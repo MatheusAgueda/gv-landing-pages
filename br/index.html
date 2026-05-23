@@ -5889,8 +5889,9 @@
         prazo: data.prazo
       });
 
-      // Google Ads conversion
+      // Consent grant on user action + Google Ads conversion
       if (typeof gtag !== 'undefined') {
+        gtag('consent', 'update', {'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted'});
         gtag('event', 'conversion', {
           send_to: `${CONFIG.awId}/${CONFIG.awConvLabel}`,
           value: getLeadValue(data.orcamento),
@@ -5919,7 +5920,10 @@
       var waUrl = 'https://wa.me/' + CONFIG.waNumber + '?text=' + encodeURIComponent(waMsg);
       var waLink = document.querySelector('#formSucesso a[href*="wa.me"]');
       if (waLink) waLink.href = waUrl;
-      setTimeout(function(){ window.open(waUrl, '_blank'); }, 1500);
+      setTimeout(function(){
+        if(/Mobi|Android/i.test(navigator.userAgent)){window.location.href=waUrl;}
+        else{window.open(waUrl,'_blank')||window.location.assign(waUrl);}
+      }, 1500);
 
       // Disparar evento customizado
       window.dispatchEvent(new Event('lead_submitted'));

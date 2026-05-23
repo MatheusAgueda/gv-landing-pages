@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Casas Móveis desde €11.980 | Green Village Mobile Homes — Showroom Vigo, Galiza | Único Anunciante em Portugal</title>
   <meta name="description" content="O único showroom de casas móveis a anunciar em Portugal. 2.800+ modelos europeus desde €11.980. Concorrentes fecham — nós expandimos. Showroom em Vigo, Galiza. WhatsApp bot disponível 24h. Entrega nos 20 distritos.">
-  <meta name="robots" content="noindex, nofollow">
+  <meta name="robots" content="noindex, follow">
   <meta property="og:title" content="Casas Móveis desde €11.980 | Green Village Mobile Homes — Portugal">
   <meta property="og:description" content="2.800+ modelos europeus. Showroom Vigo, Galiza. Desde €11.980. O único anunciante nacional. WhatsApp 24h.">
   <meta property="og:type" content="website">
@@ -905,11 +905,6 @@
       <p class="subtitle">Preencha e receba proposta personalizada. Sem compromisso.</p>
 
       <form id="gv-lead-form" action="#" method="post" novalidate>
-        <input type="hidden" name="gclid" id="gclid" value="">
-        <input type="hidden" name="utm_source" id="utm_source" value="">
-        <input type="hidden" name="utm_medium" id="utm_medium" value="">
-        <input type="hidden" name="utm_campaign" id="utm_campaign" value="">
-        <input type="hidden" name="utm_content" id="utm_content" value="">
         <!-- Hidden UTM/GCLID fields -->
         <input type="hidden" name="utm_source" id="f_utm_source">
         <input type="hidden" name="utm_medium" id="f_utm_medium">
@@ -919,95 +914,34 @@
         <input type="hidden" name="gclid" id="f_gclid">
         <input type="hidden" name="source_page" value="template-pt-2026">
 
-        <div class="form-row">
-          <div class="form-group">
-            <label for="nome">Nome *</label>
-            <input type="text" id="nome" name="nome" placeholder="O seu nome" required autocomplete="given-name">
-          </div>
-          <div class="form-group">
-            <label for="telefone">Telefone *</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="+351 9XX XXX XXX" required autocomplete="tel">
-          </div>
+        <div class="form-group">
+          <label for="nome">Nome *</label>
+          <input type="text" id="nome" name="nome" placeholder="O seu nome" required autocomplete="given-name">
         </div>
 
         <div class="form-group">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="email@exemplo.pt" autocomplete="email">
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="distrito">Distrito *</label>
-            <select id="distrito" name="distrito" required>
-              <option value="">Selecionar...</option>
-              <option>Aveiro</option>
-              <option>Beja</option>
-              <option>Braga</option>
-              <option>Bragança</option>
-              <option>Castelo Branco</option>
-              <option>Coimbra</option>
-              <option>Évora</option>
-              <option>Faro</option>
-              <option>Guarda</option>
-              <option>Leiria</option>
-              <option>Lisboa</option>
-              <option>Portalegre</option>
-              <option>Porto</option>
-              <option>Santarém</option>
-              <option>Setúbal</option>
-              <option>Viana do Castelo</option>
-              <option>Vila Real</option>
-              <option>Viseu</option>
-              <option>Ilha da Madeira</option>
-              <option>Ilha dos Açores</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="tipologia">Tipologia</label>
-            <select id="tipologia" name="tipologia">
-              <option value="">Qualquer</option>
-              <option>T0 / Studio (desde €11.980)</option>
-              <option>T1 (desde €18.500)</option>
-              <option>T2 (desde €29.900)</option>
-              <option>T3 (desde €55.000)</option>
-              <option>T3+ Premium (desde €95.000)</option>
-              <option>Luxo (desde €250.000)</option>
-              <option>Glamping / Turismo Rural</option>
-            </select>
-          </div>
+          <label for="telefone">Telefone / WhatsApp *</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="+351 9XX XXX XXX" required autocomplete="tel">
         </div>
 
         <div class="form-group">
-          <label for="orcamento">Orçamento aproximado</label>
-          <select id="orcamento" name="orcamento">
-            <option value="">Selecionar...</option>
-            <option>Até €20.000</option>
-            <option>€20.000 – €50.000</option>
-            <option>€50.000 – €100.000</option>
-            <option>€100.000 – €200.000</option>
-            <option>Acima de €200.000</option>
+          <label for="tipologia">O que procura? (opcional)</label>
+          <select id="tipologia" name="tipologia">
+            <option value="">Selecionar tipologia...</option>
+            <option>T0 / Studio (desde €11.980)</option>
+            <option>T1 (desde €18.500)</option>
+            <option>T2 (desde €29.900)</option>
+            <option>T3 (desde €55.000)</option>
+            <option>T3+ Premium (desde €95.000)</option>
+            <option>Luxo (desde €250.000)</option>
+            <option>Glamping / Turismo Rural</option>
           </select>
-        </div>
-
-        <div class="form-group">
-          <label for="mensagem">Mensagem (opcional)</label>
-          <textarea id="mensagem" name="mensagem" placeholder="Descreva o que procura: terreno próprio, parque de campismo, uso turístico, habitação permanente..."></textarea>
         </div>
 
         <div class="form-consent">
           <input type="checkbox" id="consent_rgpd" name="consent_rgpd" required>
           <label for="consent_rgpd">
-            Concordo com o tratamento dos meus dados pessoais conforme a
-            <a href="/politica-privacidade" target="_blank">Política de Privacidade</a> (RGPD).
-            Dados usados apenas para responder ao pedido. *
-          </label>
-        </div>
-
-        <div class="form-consent">
-          <input type="checkbox" id="consent_marketing" name="consent_marketing">
-          <label for="consent_marketing">
-            Aceito receber comunicações de marketing da Green Village (catálogos, promoções, novidades).
-            Pode cancelar a qualquer momento.
+            Concordo com a <a href="/politica-privacidade" target="_blank">Política de Privacidade</a> (RGPD). *
           </label>
         </div>
 
@@ -1015,7 +949,7 @@
           Pedir Orçamento Gratuito →
         </button>
         <p class="form-privacy">
-          🔒 Os seus dados são tratados com total segurança. Sem spam.
+          🔒 Resposta via WhatsApp em menos de 2h. Sem spam.
           <a href="/politica-privacidade">Política de Privacidade</a>
         </p>
       </form>
@@ -2548,8 +2482,9 @@
           }
         });
       }
-      // Google Ads conversion
+      // Consent grant on user action (form submit = affirmative action)
       if (typeof gtag !== 'undefined') {
+        gtag('consent', 'update', {'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted'});
         gtag('event', 'conversion', {
           'send_to': 'AW-11495617117/0GJHCIPG_a4cEN3kxOkq',
           'value': 1.0,
@@ -2563,12 +2498,17 @@
       gvTrack('form_submit_success');
 
       // WhatsApp redirect with lead data
+      var tipologia = document.getElementById('tipologia') ? document.getElementById('tipologia').value : '';
       var waMsg = 'Olá! Pedido de orçamento enviado pelo site.'
-        + '\nNome: ' + nome + '\nTelefone: ' + tel;
+        + '\nNome: ' + nome + '\nTelefone: ' + tel
+        + (tipologia ? '\nTipologia: ' + tipologia : '');
       var waUrl = 'https://wa.me/351937369173?text=' + encodeURIComponent(waMsg);
       var waLink = document.querySelector('#form-success a[href*="wa.me"]');
       if (waLink) waLink.href = waUrl;
-      setTimeout(function(){ window.open(waUrl, '_blank'); }, 1500);
+      setTimeout(function(){
+        if(/Mobi|Android/i.test(navigator.userAgent)){window.location.href=waUrl;}
+        else{window.open(waUrl,'_blank')||window.location.assign(waUrl);}
+      }, 1500);
     });
   }
 

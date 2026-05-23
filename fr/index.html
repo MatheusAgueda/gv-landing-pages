@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mobil-homes & Maisons Modulaires | Green Village Mobile Homes</title>
 <meta name="description" content="Mobil-homes à partir de 10 000 €. Livraison en France, Belgique, Suisse. Devis gratuit en 24h. Transport inclus.">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="noindex, follow">
 <meta property="og:title" content="Mobil-homes &amp; Maisons Modulaires | Green Village Mobile Homes">
 <meta property="og:description" content="Mobil-homes à partir de 10 000 €. Livraison en France, Belgique, Suisse. Devis gratuit en 24h. Transport inclus.">
 <meta property="og:type" content="website">
@@ -998,6 +998,7 @@ document.getElementById('quote-form').addEventListener('submit', function(e){
     'country': fcountry
   });
   if(typeof gtag !== 'undefined'){
+    gtag('consent', 'update', {'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted'});
     gtag('event', 'conversion', {'send_to': 'AW-11495617117/0GJHCIPG_a4cEN3kxOkq', 'value': 1.0, 'currency': 'EUR'});
   }
   document.getElementById('quote-form').style.display = 'none';
@@ -1012,7 +1013,10 @@ document.getElementById('quote-form').addEventListener('submit', function(e){
   var waUrl = 'https://wa.me/351937369173?text=' + encodeURIComponent(waMsg);
   var waLink = document.querySelector('#form-success a[href*="wa.me"]');
   if (waLink) waLink.href = waUrl;
-  setTimeout(function(){ window.open(waUrl, '_blank'); }, 1500);
+  setTimeout(function(){
+    if(/Mobi|Android/i.test(navigator.userAgent)){window.location.href=waUrl;}
+    else{window.open(waUrl,'_blank')||window.location.assign(waUrl);}
+  }, 1500);
 });
 
 // GCLID capture

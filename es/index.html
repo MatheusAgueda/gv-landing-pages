@@ -5149,8 +5149,9 @@ function submitForm(e, formId){
   const email = form.querySelector('[name="email"]')?.value || '';
   const ccaa = form.querySelector('[name="ccaa"]')?.value || '';
   const model = form.querySelector('[name="model"]')?.value || '';
-  // GA4 conversion event
+  // Consent grant on user action + GA4 conversion event
   if(typeof gtag !== 'undefined'){
+    gtag('consent', 'update', {'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted'});
     gtag('event','conversion',{
       send_to: 'AW-11495617117/0GJHCIPG_a4cEN3kxOkq',
       value: 1.0,
@@ -5176,7 +5177,10 @@ function submitForm(e, formId){
     + (model ? '\nModelo: ' + model : '');
   var waUrl = 'https://wa.me/351937369173?text=' + encodeURIComponent(waMsg);
   form.reset();
-  setTimeout(function(){ window.open(waUrl, '_blank'); }, 1500);
+  setTimeout(function(){
+    if(/Mobi|Android/i.test(navigator.userAgent)){window.location.href=waUrl;}
+    else{window.open(waUrl,'_blank')||window.location.assign(waUrl);}
+  }, 1500);
 }
 
 /* ============================================================

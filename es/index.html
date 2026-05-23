@@ -2757,10 +2757,6 @@
           <input type="tel" id="f-phone" name="phone" placeholder="+34 600 000 000" required autocomplete="tel">
         </div>
         <div class="form-group">
-          <label for="f-email">Email</label>
-          <input type="email" id="f-email" name="email" placeholder="tu@email.es" required autocomplete="email">
-        </div>
-        <div class="form-group">
           <label for="f-ccaa">Comunidad Autónoma</label>
           <select id="f-ccaa" name="ccaa" required>
             <option value="">Selecciona tu CCAA</option>
@@ -5146,7 +5142,6 @@ function submitForm(e, formId){
   const form = e.target;
   const name = form.querySelector('[name="name"]')?.value || '';
   const phone = form.querySelector('[name="phone"]')?.value || '';
-  const email = form.querySelector('[name="email"]')?.value || '';
   const ccaa = form.querySelector('[name="ccaa"]')?.value || '';
   const model = form.querySelector('[name="model"]')?.value || '';
   // Consent grant on user action + GA4 conversion event
@@ -5164,7 +5159,6 @@ function submitForm(e, formId){
     form_id: formId,
     form_name: name,
     form_phone: phone,
-    form_email: email,
     form_ccaa: ccaa,
     form_model: model,
     form_lang: 'es'
@@ -5172,7 +5166,7 @@ function submitForm(e, formId){
   showToast('✅ ¡Recibido! Te contactamos en menos de 24 horas.');
   // WhatsApp redirect with lead data
   var waMsg = '¡Hola! Solicitud de presupuesto desde la web.'
-    + '\nNombre: ' + name + '\nTeléfono: ' + phone + '\nEmail: ' + email
+    + '\nNombre: ' + name + '\nTeléfono: ' + phone
     + (ccaa ? '\nComunidad: ' + ccaa : '')
     + (model ? '\nModelo: ' + model : '');
   var waUrl = 'https://wa.me/351937369173?text=' + encodeURIComponent(waMsg);

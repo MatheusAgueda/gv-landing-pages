@@ -5194,15 +5194,9 @@
                 <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required autocomplete="name">
               </div>
 
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="email">E-mail *</label>
-                  <input type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email">
-                </div>
-                <div class="form-group">
-                  <label for="telefone">Celular com DDD *</label>
-                  <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required autocomplete="tel">
-                </div>
+              <div class="form-group">
+                <label for="telefone">Celular com DDD *</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required autocomplete="tel">
               </div>
 
               <div class="form-row">
@@ -5913,7 +5907,6 @@
       // WhatsApp redirect with lead data
       var waMsg = 'Olá! Orçamento solicitado pelo site.'
         + '\nNome: ' + (data.nome || '') + '\nTelefone: ' + (data.telefone || '')
-        + '\nEmail: ' + (data.email || '')
         + (data.estado ? '\nEstado: ' + data.estado : '')
         + (data.modelo ? '\nModelo: ' + data.modelo : '')
         + (data.orcamento ? '\nOrçamento: ' + data.orcamento : '')

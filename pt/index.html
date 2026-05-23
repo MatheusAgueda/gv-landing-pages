@@ -946,7 +946,7 @@
         </div>
 
         <button type="submit" class="btn-submit" onclick="gvTrack('form_submit_click')">
-          Pedir Orçamento Gratuito →
+          Quero o Meu Orçamento em 24h →
         </button>
         <p class="form-privacy">
           🔒 Resposta via WhatsApp em menos de 2h. Sem spam.
@@ -2460,14 +2460,31 @@
       var tel  = document.getElementById('telefone').value.trim();
       var consent = document.getElementById('consent_rgpd').checked;
 
-      if (!nome || !tel) {
-        alert('Por favor preencha nome e telefone.');
-        return;
+      // Clear previous errors
+      form.querySelectorAll('.field-error').forEach(function(el) { el.remove(); });
+      form.querySelectorAll('.input-error').forEach(function(el) { el.classList.remove('input-error'); });
+      var hasError = false;
+      function showFieldError(fieldId, msg) {
+        var field = document.getElementById(fieldId);
+        if (field) {
+          field.classList.add('input-error');
+          field.style.borderColor = '#dc2626';
+          var err = document.createElement('span');
+          err.className = 'field-error';
+          err.style.cssText = 'color:#dc2626;font-size:13px;margin-top:4px;display:block;';
+          err.textContent = msg;
+          field.parentNode.appendChild(err);
+        }
+        hasError = true;
       }
+      if (!nome) showFieldError('nome', 'Preencha o seu nome.');
+      if (!tel) showFieldError('telefone', 'Preencha o seu telefone.');
       if (!consent) {
-        alert('É necessário aceitar a Política de Privacidade (RGPD) para continuar.');
-        return;
+        var consentLabel = document.querySelector('label[for="consent_rgpd"]');
+        if (consentLabel) { consentLabel.style.color = '#dc2626'; }
+        showFieldError('consent_rgpd', 'Aceite a Política de Privacidade para continuar.');
       }
+      if (hasError) return;
 
       // GA4 + GTM event
       if (typeof dataLayer !== 'undefined') {
@@ -2808,19 +2825,8 @@
     <div style="color:#fca5a5;font-size:14px;font-weight:600;letter-spacing:2px;margin-bottom:16px;">ATENÇÃO — OFERTA LIMITADA</div>
     <h2 style="font-size:clamp(24px,4vw,38px);font-weight:800;color:#fff;margin:0 0 16px;">Algarve MH Encerrou.<br>Stock Disponível em Vigo Agora.</h2>
     <p style="color:#fca5a5;font-size:17px;margin:0 0 32px;">Os clientes da Algarve Mobile Homes estão a contactar-nos. Stock actual: limitado. Preços a partir de €11.980.</p>
-    <div style="display:flex;gap:16px;justify-content:center;margin-bottom:32px;">
-      <div style="background:rgba(0,0,0,.2);border-radius:12px;padding:16px 20px;min-width:70px;">
-        <div id="urgency-hours" style="font-size:32px;font-weight:800;color:#fff;line-height:1;">--</div>
-        <div style="color:#fca5a5;font-size:12px;margin-top:4px;">HORAS</div>
-      </div>
-      <div style="background:rgba(0,0,0,.2);border-radius:12px;padding:16px 20px;min-width:70px;">
-        <div id="urgency-mins" style="font-size:32px;font-weight:800;color:#fff;line-height:1;">--</div>
-        <div style="color:#fca5a5;font-size:12px;margin-top:4px;">MINUTOS</div>
-      </div>
-      <div style="background:rgba(0,0,0,.2);border-radius:12px;padding:16px 20px;min-width:70px;">
-        <div id="urgency-secs" style="font-size:32px;font-weight:800;color:#fff;line-height:1;">--</div>
-        <div style="color:#fca5a5;font-size:12px;margin-top:4px;">SEGUNDOS</div>
-      </div>
+    <div style="background:rgba(0,0,0,.2);border-radius:12px;padding:20px 28px;margin-bottom:32px;display:inline-block;">
+      <div style="font-size:18px;font-weight:700;color:#fff;line-height:1.5;">Showroom Vigo: Ter–Sáb 10h–18h<br><span style="color:#fca5a5;font-size:15px;">Carr. Madrid 183, Lavadores · Visita sem marcação</span></div>
     </div>
     <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;">
       <a href="https://wa.me/351937369173?text=Quero+ver+stock+dispon%C3%ADvel+agora" style="background:#fff;color:#dc2626;padding:16px 36px;border-radius:10px;font-weight:800;font-size:17px;text-decoration:none;" onclick="gvTrack('urgency_wa_cta')">Ver Stock Disponível →</a>
@@ -2829,29 +2835,6 @@
   </div>
 </section>
 
-<script>
-/* Urgency countdown — resets every 24h from page load */
-(function() {
-  var deadline = new Date();
-  deadline.setHours(deadline.getHours() + 8);
-  function tick() {
-    var now = new Date();
-    var diff = Math.max(0, deadline - now);
-    var h = Math.floor(diff / 3600000);
-    var m = Math.floor((diff % 3600000) / 60000);
-    var s = Math.floor((diff % 60000) / 1000);
-    var pad = function(n) { return n < 10 ? '0' + n : n; };
-    var eh = document.getElementById('urgency-hours');
-    var em = document.getElementById('urgency-mins');
-    var es = document.getElementById('urgency-secs');
-    if (eh) eh.textContent = pad(h);
-    if (em) em.textContent = pad(m);
-    if (es) es.textContent = pad(s);
-  }
-  tick();
-  setInterval(tick, 1000);
-})();
-</script>
 
 <!-- ============================================================
   SECTION: PERGUNTAS RÁPIDAS — MICRO FAQ

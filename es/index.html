@@ -5139,7 +5139,7 @@ document.addEventListener('DOMContentLoaded', updateSim);
 })();
 
 /* ============================================================
-   FORM SUBMIT
+   FORM SUBMIT + WHATSAPP LEAD DELIVERY
 ============================================================ */
 function submitForm(e, formId){
   e.preventDefault();
@@ -5157,23 +5157,26 @@ function submitForm(e, formId){
       currency: 'EUR',
       transaction_id: Date.now().toString()
     });
-    dataLayer.push({
-      event: 'form_submit',
-      form_id: formId,
-      form_name: name,
-      form_phone: phone,
-      form_email: email,
-      form_ccaa: ccaa,
-      form_model: model,
-      form_lang: 'es'
-    });
   }
+  dataLayer.push({
+    event: 'form_submit',
+    form_id: formId,
+    form_name: name,
+    form_phone: phone,
+    form_email: email,
+    form_ccaa: ccaa,
+    form_model: model,
+    form_lang: 'es'
+  });
   showToast('✅ ¡Recibido! Te contactamos en menos de 24 horas.');
+  // WhatsApp redirect with lead data
+  var waMsg = '¡Hola! Solicitud de presupuesto desde la web.'
+    + '\nNombre: ' + name + '\nTeléfono: ' + phone + '\nEmail: ' + email
+    + (ccaa ? '\nComunidad: ' + ccaa : '')
+    + (model ? '\nModelo: ' + model : '');
+  var waUrl = 'https://wa.me/351937369173?text=' + encodeURIComponent(waMsg);
   form.reset();
-  // Redirect to thank you page
-  setTimeout(() => {
-    window.location.href = '/es/gracias';
-  }, 1500);
+  setTimeout(function(){ window.open(waUrl, '_blank'); }, 1500);
 }
 
 /* ============================================================
@@ -5182,6 +5185,9 @@ function submitForm(e, formId){
 function trackWA(){
   if(typeof dataLayer !== 'undefined'){
     dataLayer.push({event:'wa_click', page_lang:'es'});
+  }
+  if(typeof gtag !== 'undefined'){
+    gtag('event', 'conversion', { 'send_to': 'AW-11495617117/3Q3oCJu3_a4cEN3kxOkq', 'value': 1.0, 'currency': 'EUR' });
   }
 }
 
@@ -5445,6 +5451,9 @@ document.querySelectorAll('a[href^="tel:"]').forEach(function(el){
   el.addEventListener('click', function(){
     if(typeof dataLayer !== 'undefined'){
       dataLayer.push({event: 'phone_click', page_lang: 'es'});
+    }
+    if(typeof gtag !== 'undefined'){
+      gtag('event', 'conversion', { 'send_to': 'AW-11495617117/T6ysCLuT_q4cEN3kxOkq' });
     }
   });
 });

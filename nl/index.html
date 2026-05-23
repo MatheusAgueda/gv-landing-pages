@@ -808,24 +808,42 @@ document.querySelectorAll('.faq-question').forEach(function(btn){
   });
 });
 
-// Form submit tracking
+// Form submit tracking + WhatsApp lead delivery
 document.getElementById('quote-form').addEventListener('submit', function(e){
   e.preventDefault();
+  var fname = (document.getElementById('fname').value || '').trim();
+  var fphone = (document.getElementById('fphone').value || '').trim();
+  var femail = (document.getElementById('femail').value || '').trim();
+  var fcountry = document.getElementById('fcountry').value || '';
+  var fbedrooms = document.getElementById('fbedrooms').value || '';
+  var fbudget = document.getElementById('fbudget').value || '';
+  var fmessage = (document.getElementById('fmessage').value || '').trim();
   window.dataLayer = window.dataLayer || [];
   dataLayer.push({
     'event': 'lead_form_submit',
     'conversion_label': 'FORM_SUBMIT',
     'market': document.documentElement.lang || 'nl',
     'form_name': 'landing_page_quote',
-    'budget': document.getElementById('fbudget').value,
-    'bedrooms': document.getElementById('fbedrooms').value,
-    'country': document.getElementById('fcountry').value
+    'budget': fbudget,
+    'bedrooms': fbedrooms,
+    'country': fcountry
   });
   if(typeof gtag !== 'undefined'){
-    gtag('event', 'conversion', {'send_to': 'AW-11495617117/0GJHCIPG_a4cEN3kxOkq'});
+    gtag('event', 'conversion', {'send_to': 'AW-11495617117/0GJHCIPG_a4cEN3kxOkq', 'value': 1.0, 'currency': 'EUR'});
   }
   document.getElementById('quote-form').style.display = 'none';
   document.getElementById('form-success').style.display = 'block';
+  // Build WhatsApp message with lead data
+  var waMsg = 'Hallo! Offerteaanvraag via de website.'
+    + '\nNaam: ' + fname + '\nTelefoon: ' + fphone + '\nE-mail: ' + femail
+    + (fcountry ? '\nLand: ' + fcountry : '')
+    + (fbedrooms ? '\nModel: ' + fbedrooms : '')
+    + (fbudget ? '\nBudget: ' + fbudget : '')
+    + (fmessage ? '\nBericht: ' + fmessage : '');
+  var waUrl = 'https://wa.me/351937369173?text=' + encodeURIComponent(waMsg);
+  var waLink = document.querySelector('#form-success a[href*="wa.me"]');
+  if (waLink) waLink.href = waUrl;
+  setTimeout(function(){ window.open(waUrl, '_blank'); }, 1500);
 });
 
 // GCLID capture
@@ -837,6 +855,24 @@ document.getElementById('quote-form').addEventListener('submit', function(e){
     if(h) h.value = gclid;
   }
 })();
+
+/* ---- PHONE CLICK TRACKING ---- */
+document.querySelectorAll('a[href^="tel:"]').forEach(function(a) {
+  a.addEventListener('click', function() {
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'conversion', { 'send_to': 'AW-11495617117/T6ysCLuT_q4cEN3kxOkq' });
+    }
+  });
+});
+
+/* ---- WHATSAPP CLICK TRACKING ---- */
+document.querySelectorAll('a[href^="https://wa.me"]').forEach(function(a) {
+  a.addEventListener('click', function() {
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'conversion', { 'send_to': 'AW-11495617117/3Q3oCJu3_a4cEN3kxOkq', 'value': 1.0, 'currency': 'EUR' });
+    }
+  });
+});
 </script>
 
 <script>
